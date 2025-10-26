@@ -1,0 +1,73 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: arial,sans-serif;
+  height: 100vh;
+  background-image: url(https://m.media-amazon.com/images/I/71SiLxdQ0jL._AC_UF1000,1000_QL80_.jpg);
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+header{
+  background-color: rgba(0,0,0, .55);
+  color: white;
+  padding: 5px 0;
+}
+.container{
+  max-width: 100%;
+  margin: 0 25px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+h1{
+  margin: 0;
+  font-size: 25px;
+}
+nav ul{
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li{
+  margin-right: 27px;
+}
+nav ul li:hover{
+  transform: scale(1.2);
+  transition: transform 0.3 ease ;
+}
+nav ul li a{
+  text-decoration: none;
+  color: white;
+ transition: color 0,3s;
+}
+nav ul li a:hover{
+  color: red;
+
+}
+#menu-toggle{
+  display: none;
+  height: 100%;
+}
+@media screen and (max-width: 768px){
+  nav ul{
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    position:absolute;
+    top:50px;
+    left: 0;
+    background-color: rgba(0,0,0, .5);
+    text-align: center;
+    height: 100%;
+    width: 100px;
+  }
+
+    .menu.active {
+      display: flex;
+    }
+  }
+
